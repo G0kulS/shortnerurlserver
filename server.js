@@ -6,7 +6,7 @@ app.use(cors())
 app.use(express.json())
 app.listen(process.env.port || 4000);
 
-const URL = "mongodb://localhost:27017";
+const URL = "mongodb+srv://dbuser:error404@cluster0.coton.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const DB = "shorterlink"
 app.post("/",async (req,res)=>{
     try{
